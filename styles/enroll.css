@@ -1,0 +1,35 @@
+body{
+
+	max-width: 450px;
+}
+
+.box{
+	max-width: 380px;
+    padding: 40px;
+    border-radius: 10px;
+    background: white;
+    margin: 0 auto;
+    margin-left: 50px;
+}
+.box-header{
+	background: whitesmoke;
+	position: relative;
+    height: auto;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 16px;
+}
+.box-header h2{
+	color: rosybrown;
+	font-weight: 300;
+	font-family: fantasy !important;
+
+}
+
+.text-center .btn-primary{
+	background: rosybrown;
+}
+
+.text-center .btn-primary:hover{
+    background: burlywood;
+}

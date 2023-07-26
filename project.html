@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="elixirlogo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="styles/blog.css">
+    <title>Elixir Project</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Elixir School</h1>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portal.php">Portal</a></li>
+                <li><a href="newsletter.html">Newsletter</a></li>
+                <li class="active">Project</li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+            <box-icon name='menu' animation='tada' id="menu" ></box-icon>
+        </nav>
+        <div class="header-content">
+            <h1>Students Projects available now!!!</h1>
+            <p><box-icon name='chevrons-down' type='solid' animation='fade-down' color='whitesmoke' ></box-icon></p>
+        </div>
+
+    </header>
+    
+    
+    <!-- Contact -->
+    
+    <section class="contact">
+        <div class="row">
+            <h1>Contact Us</h1>
+        </div>
+        <div class="row">
+            <form action="https://formsubmit.co/684cea405a4d695e2c4f878361bff0b3" method="POST">
+                <input type="hidden" name="_next" value="http://elixirschool.com.ng/thanks.html">
+                <input type="hidden" name="_subject" value="New email yaaooo!">
+                <input type="hidden" name="_template" value="table">
+                <input type="text" name="name" placeholder="Enter your name">
+                <input type="email" name="email" placeholder="Enter your email">
+                <textarea name="message" placeholder="How can we help you?"></textarea>
+                <input type="hidden" name="_autoresponse" value="You will be responded to, in due time!">
+                <input type="submit" value="SEND">
+                <div class="status">
+                    <span></span>
+                </div>
+            </form>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <p>Made with <box-icon name='heart' type='solid' color='red'></box-icon> 2022 Elixir School. All Rights Reserved</p>
+        <div class="callus">
+            <h2>Call Us:</h2>
+            <ul class="mobile-list">
+                <li><a href="tel:+2347062379713">07062379713,</a></li>
+                <li><a href="tel:+2348035619508">08035619508,</a></li>
+                <li><a href="tel:+2347031952194">07031952194</a></li>
+            </ul>          
+        </div>
+        
+    </footer>
+
+
+
+    <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
+    <script src="js/menu.js"></script>
+    <!--<script src="js/status.js"></script>-->
+    <!--<script src="https://smtpjs.com/v3/smtp.js"></script>-->
+    <!--<script>-->
+    <!--    function sendEmail(){-->
+    <!--        Email.send({-->
+    <!--            SecureToken: "e9827818-26db-4abc-9cc4-fac455a0cf1e",-->
+    <!--            To: "diochuks65@gmail.com",-->
+    <!--            From: document.getElementById("email").value,-->
+    <!--            Subject: "New Contact Form Enquiry",-->
+    <!--            Body: "Name: " + document.getElementById("name").value + "<br> Email: " + document.getElementById("email").value + "<br> Message: " + document.getElementById("message").value-->
+    <!--        }).then(-->
+    <!--        message => alert("Message Sent Success")-->
+    <!--        );-->
+    <!--    }-->
+    <!--</script>-->
+    
+</body>
+</html>

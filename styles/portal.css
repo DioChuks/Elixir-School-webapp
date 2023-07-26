@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+/* Base Styling*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+body{
+    font-family: "Poppins", sans-serif;
+}
+a{
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: whitesmoke;
+}
+h1,h2{
+    margin: 1.6rem 0;
+}
+h1{
+    font-weight: 800;
+    font-size: 3.6rem;
+}
+h2{
+    font-weight: 800;
+    font-size: 2.4rem;
+}
+p{
+    font-weight: 400;
+    font-size: 1.8rem;
+}
+img{
+    height: auto;
+    width: 100%;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    align-items: center;
+    margin: auto;
+}
+section{
+    padding: 100px 0;
+}
+/*Header styles*/
+
+header{
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.9),rgba(0, 0, 0,0.6)), url('../bookapple.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: whitesmoke;
+}
+
+.logohead h1{
+    margin: 0;
+    font-size: 1.9rem;
+    color: sandybrown;
+}
+
+nav{
+    padding: 2% 8%;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav box-icon{
+    display: none;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-left: 2.5rem;
+}
+
+nav ul li a:hover{
+    color: sandybrown;
+    transition: .5s ease-in-out;
+}
+.active{
+    font-size: 1.2rem;
+    color: sandybrown;
+}
+
+/*Header Styles End*/
+
+/*RESPONSIVE MOBILE VIEW*/
+@media only screen and (max-width: 768px){
+    nav{
+        flex-direction: row;
+        position: relative;
+    }
+    nav box-icon{
+        background: sandybrown;
+        display: block;
+        position: absolute;
+        top: 18px;
+        right: 32px;
+        border-radius: 10%;
+        z-index: 10;
+    }
+    nav ul{
+        background: rgb(0, 0, 0,0.1);
+        display: none;
+        z-index: 10;
+    }
+    .showmenu{
+        display: block;
+        z-index: 10;
+    }
+    nav ul li{
+        display: block;
+        padding-top: 30%;
+        width: 100px;
+        z-index: 10;
+    }
+    nav ul li a{
+        color: #fff;
+    }
+    footer{
+        display: block;
+    }
+}
+
+/*login styles*/
+
+.loginbox{
+    width: 320px;
+    height: 400px;
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0, 0, 0,0.1));
+    color: sandybrown;
+    top: 55%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+.logo{
+    width: 100px;
+    height: 100px;
+    border-radius: 25%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+h3{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 23px;
+    font-family: sans-serif;
+}
+.loginbox p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+.loginbox input{
+    width: 100%;
+    margin-bottom: 20px;
+    color: white;
+}
+.loginbox input[placeholder]{
+    color: white;
+}
+.loginbox input[type="text"],input[type="email"], input[type="password"]{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    font-size: 16px;
+}
+.loginbox input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: rgba(0, 0, 0,0.2);
+    color: sandybrown;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.loginbox input[type="submit"]:hover{
+    cursor: pointer;
+    background: sandybrown;
+    color: rgb(145, 60, 145);
+    transition: .5s ease-in-out;
+}
+.loginbox a{
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 20px;
+    color: white;
+}
+.loginbox a:hover{
+    color: sandybrown;
+    transition: .5s ease-in-out;
+}
+
+
+/* Footer */
+footer{
+    height: 100px;
+    background-color: #222;
+    color: #fff;
+    line-height: 80px;
+    text-align: center;
+}

@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+/*Base styling*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+body{
+    font-family: "Poppins", sans-serif;
+}
+a{
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: whitesmoke;
+}
+h1,h2,p{
+    margin: 1.6rem 0;
+}
+h1{
+    font-weight: 800;
+    font-size: 3.6rem;
+}
+h2{
+    font-weight: 800;
+    font-size: 2.4rem;
+}
+p{
+    font-weight: 400;
+    font-size: 1.8rem;
+}
+img{
+    height: auto;
+    width: 100%;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    align-items: center;
+    margin: auto;
+}
+section{
+    padding: 100px 0;
+}
+
+/*header styles*/
+
+header{
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.9),rgba(0, 0, 0,0.4)), url('../bookapple.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: whitesmoke;
+}
+
+.logo h1{
+    margin: 0;
+    font-size: 3.2rem;
+    color: sandybrown;
+}
+
+nav{
+    padding: 2% 8%;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav box-icon{
+    display: none;
+}
+
+nav ul{
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-left: 2.5rem;
+}
+
+nav ul li a:hover{
+    color: sandybrown;
+    transition: .5s ease-in-out;
+}
+.active{
+    font-size: 1.2rem;
+    color: sandybrown;
+}
+
+.header-content{
+    width: 50%;
+    position: relative;
+    top: 16%;
+    left: 8%;
+}
+/*Header Styles End*/
+
+
+/* About Section */
+.about-left, .about-middle, .about-right{
+    flex-basis: 60%;
+    padding: 1.6rem 1.1rem;
+    border: 1px solid sandybrown;
+    background-color: sandybrown;
+    box-sizing: border-box;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0,0.1);
+    border-radius: 10px;
+    transition: ease-in .5s;
+}
+.mySlides{
+    width: auto;
+}
+
+/* Testimony */
+.testimony{
+    background-color: #222;
+    color: whitesmoke;
+}
+
+.testimony .test{
+    background-color: #505050;
+    padding: 4rem 8rem;
+    margin: 0 1rem;
+}
+
+.testimony .image{
+    height: 80px;
+    width: 80px;
+}
+
+.testimony img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Contact */
+.contact .row{
+    justify-content: center;
+}
+.contact form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact form input{
+    width: 50%;
+    height: 50px;
+    border: 1px solid #ccc;
+    font-size: 1.2rem;
+    padding: 12px 20px;
+    margin: 1.2rem 0;
+}
+.contact textarea{
+    width: 50%;
+    height: 150px;
+    border: 1px solid #ccc;
+    font-size: 1.4rem;
+    margin: 1.2rem 0;
+    padding: 0.9rem 1.2rem;
+    resize: none;
+    font-family: "Poppins", sans-serif;
+}
+.contact form input[type="submit"]{
+    background: rgb(45, 219, 45);
+    color: white;
+}
+.contact form input[type="submit"]:hover{
+    background: green;
+    cursor: pointer;
+}
+
+/* Footer */
+footer{
+    height: auto;
+    background-color: #222;
+    color: #fff;
+    line-height: 80px;
+    text-align: center;
+}
+footer .callus{
+    margin: 10px;
+}
+.callus h2{
+	color: lightgreen;
+	margin:0;
+	padding:0;
+}
+.callus .mobile-list{
+    list-style-type: none;
+	display: inline-block;
+    padding: 0px;
+}
+.mobile-list li{
+	display: inline-block;
+	margin: 0 0 10px 10px;
+    font-size: 1.3rem;
+}
+.mobile-list li a:hover{
+	cursor: pointer;
+	color: lightgreen;
+	text-decoration: underline;
+}
+
+
+
+
+
+/*RESPONSIVE MOBILE VIEW*/
+@media only screen and (max-width: 768px){
+    nav{
+        flex-direction: row;
+        position: relative;
+    }
+    nav box-icon{
+        background: sandybrown;
+        display: block;
+        position: absolute;
+        top: 18px;
+        right: 32px;
+        border-radius: 10%;
+        z-index: 10;
+    }
+    nav ul{
+        background: rgb(0, 0, 0,0.1);
+        display: none;
+        z-index: 10;
+    }
+    .showmenu{
+        display: block;
+        z-index: 10;
+    }
+    nav ul li{
+        display: block;
+        padding-top: 30%;
+        width: 100px;
+        z-index: 10;
+    }
+    nav ul li a{
+        color: #fff;
+    }
+
+    .header-content{
+        width: 100%;
+        top: 20px;
+        left: 0;
+        text-align: center;
+        padding: 0 8px;
+    }
+    input[type=text],input[type=email],input[type=submit]{
+        width:80%;
+        margin: 1.2rem auto;
+    }
+    .about .row{
+        display: block;
+    }
+    .about-left{
+        border: 1px solid #fff;
+        box-sizing: border-box;
+        box-shadow: 2px 4px 8px rgba(0, 0, 0,0.1);
+        border-radius: 1.5%;
+        margin-bottom: 20px;
+    }
+    .about-left img{
+        border-radius: none;
+    }
+    .mySlides{
+        width: 100%;
+    }
+    .about-middle{
+        background: sandybrown;
+        color: #fff;
+        border-radius: 1.5%;
+        margin-bottom: 20px;
+    }
+    .about-right{
+        border: 1px solid #fff;
+        box-sizing: border-box;
+        box-shadow: 2px 4px 8px rgba(0, 0, 0,0.1);
+        border-radius: 1.5%;
+        margin-bottom: 15px;
+    }
+
+    .testimony{
+        display: block;
+        background: sandybrown;
+        padding: 4rem 2rem;
+        width: 100%;
+    }
+    .testimony .row{
+        width: 100%;
+        padding-right: 20px;
+        display: block;
+    }
+    .testimony .test{
+        background: #fff;
+        border-radius: 1.5%;
+        color: black;
+        margin: 1.1rem 0;
+    }
+    .test-content p{
+        width: 100%;
+        padding: 0 8px;
+    }
+
+    .contact form input, .contact textarea{
+        width: 100%;
+    }
+    footer{
+        display: block;
+        font-size: 1.3rem;
+    }
+}

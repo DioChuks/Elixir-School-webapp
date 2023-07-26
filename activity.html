@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/blog.css">
+    <link rel="shortcut icon" href="elixirlogo.png" type="image/x-icon" />
+    <title>Elixir School Activity</title>
+    <style>
+        body {
+          margin: 0;
+          padding: 0;
+          background-color: #f0f0f0;
+          overflow-x: hidden;
+        }
+  
+        .slideshow-container {
+          display: flex;
+          max-width: auto;
+          width: 100%;
+          position: relative;
+          overflow: hidden;
+          margin: 10px;
+        }
+  
+        .slide-container {
+          display: flex;
+          flex: 0 0 33.33%;
+          position: relative;
+        }
+  
+        .slide {
+          flex: 1;
+          position: relative;
+          opacity: 0;
+          transition: opacity 1s ease-in-out;
+          box-shadow: 0 0 50px #ccc;
+        }
+  
+        .slide img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 8px;
+        }
+        .slide img:hover{
+          transition: .2s ease-in-out;
+          transform: translateX(-8px);
+        }
+  
+        .slide .text {
+          position: absolute;
+          bottom: 10px;
+          left: 10px;
+          color: #fff;
+          font-size: 18px;
+          background-color: rgba(0, 0, 0, 0.7);
+          padding: 8px;
+          border-radius: 4px;
+        }
+  
+        .slide.fade-in {
+          opacity: 1;
+        }
+  
+        .slide1 {
+          animation: fade 5s infinite;
+        }
+  
+        .slide2 {
+          animation: fade 8s infinite;
+        }
+  
+        .slide3 {
+          animation: fade 12s infinite;
+        }
+  
+        @keyframes fade {
+          0%,
+          100% {
+            opacity: 0;
+          }
+          25%,
+          75% {
+            opacity: 1;
+          }
+        }
+        /* Mobile view CSS */
+    @media (max-width: 600px) {
+        body{
+            overflow-x: hidden;
+        }
+        .slideshow-container {
+          height: auto;
+        }
+  
+        .slide-container {
+          flex: 0 0 100%;
+          margin-bottom: 20px;
+        }
+
+        .slide img:hover{
+            transition: .2s ease-in-out;
+            transform: translateY(-8px);
+          }
+  
+        .slide .text {
+          font-size: 14px;
+          padding: 6px;
+        }
+      }
+      </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Elixir School</h1>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portal.php">Portal</a></li>
+                <li class="active">Activity</li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+            <box-icon name='menu' animation='tada' id="menu" ></box-icon>
+        </nav>
+        <div class="header-content">
+            <h1>Our Activity</h1>
+            <p>We emphasize freedom within limits, and respect for a child's natural psychological, physical, and social development. Thus, exposure to increase their capabilities. Below are some pictures of our activities.</p>
+            <p><box-icon name='chevrons-down' type='solid' animation='fade-down' color='whitesmoke' ></box-icon></p>
+        </div>
+
+    </header>
+    <!-- Activity -->
+    <div class="slideshow-container">
+        <div class="slide-container">
+          <div class="slide slide1">
+            <img src="images/2023/IMG-20230607-WA0031.jpg" alt="Image 1" />
+            <div class="text">Visit to Lekki Conservation Centre</div>
+          </div>
+        </div>
+        <div class="slide-container">
+          <div class="slide slide2">
+            <img src="images/2023/IMG-20230607-WA0032.jpg" alt="Image 2" />
+          </div>
+        </div>
+        <div class="slide-container">
+          <div class="slide slide3">
+            <img src="images/2023/IMG-20230607-WA0027.jpg" alt="Image 3" />
+            <div class="text">Students on Excursion at the conversation centre!</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Activity -->
+    <div class="slideshow-container">
+        <div class="slide-container">
+          <div class="slide slide1">
+            <img src="images/2023/IMG-20230607-WA0036.jpg" alt="Image 1" />
+            <div class="text">2023 Cultural Day</div>
+          </div>
+        </div>
+        <div class="slide-container">
+          <div class="slide slide2">
+            <img src="images/2023/IMG-20230607-WA0043.jpg" alt="Image 2" />
+          </div>
+        </div>
+        <div class="slide-container">
+          <div class="slide slide3">
+            <img src="images/2023/IMG-20230607-WA0046.jpg" alt="Image 3" />
+            <div class="text">Students celebrating their culture!</div>
+          </div>
+        </div>
+      </div>
+
+       <!-- Activity -->
+    <div class="slideshow-container">
+        <div class="slide-container">
+          <div class="slide slide1">
+            <img src="images/2023/IMG-20230607-WA0025.jpg" alt="Image 1" />
+            <div class="text">Parades n Drills</div>
+          </div>
+        </div>
+        <div class="slide-container">
+          <div class="slide slide2">
+            <img src="images/2023/IMG-20230607-WA0026.jpg" alt="Image 2" />
+          </div>
+        </div>
+        <div class="slide-container">
+          <div class="slide slide3">
+            <img src="images/2023/IMG-20230607-WA0029.jpg" alt="Image 3" />
+            <div class="text">Students performing their parades and drills!</div>
+          </div>
+        </div>
+      </div>
+    
+    <!-- Activity -->
+    <section class="about">
+        <div class="row">
+            <div class="about-left">
+                <h2>NIMET Excursion</h2>
+                <img src="images/nimet exc.jpg" alt="image-excursion" class="mySlides">
+                <img src="images/nimet exc1.jpg" alt="image-exc2" class="mySlides">
+                <img src="images/nimet exc2.jpg" alt="image-exc3" class="mySlides">
+                <p>Staff and Students on Excursion to Nigerian Meteorological Institute(NIMET), Lagos.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Activity -->
+    <section class="about">
+        <div class="row">
+            <div class="about-left">
+                <h2>Career Day</h2>
+                <img src="images/career4.jpg" alt="image-career" class="mySlides">
+                <img src="images/career5.jpg" alt="image-career2" class="mySlides">
+                <img src="images/career3.jpg" alt="image-career3" class="mySlides">
+                <p>Children on Various Career Outfits</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Activity -->
+    <section class="about">
+        <div class="row">
+            <div class="about-left">
+                <h2>Cultural Day</h2>
+                <img src="images/cultural3.jpg" alt="image-cultural" class="mySlides">
+                <img src="images/cultural2.jpg" alt="image-cultural2" class="mySlides">
+                <img src="images/cultural5.jpg" alt="image-cultural3" class="mySlides">
+                <p>Celebrating Our Culture</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Activity -->
+    <section class="about">
+        <div class="row">
+            <div class="about-left">
+                <h2>Helping Hand</h2>
+                <img src="images/char1.jpg" alt="image-charity" class="mySlides">
+                <img src="images/charity home.jpg" alt="image-charity2" class="mySlides">
+                <img src="images/char.jpg" alt="image-charity3" class="mySlides">
+                <p>Visit to SO-SAID CHARITY HOME OKOTA LAGOS.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Activity -->
+    <section class="about">
+        <div class="row">
+            <div class="about-left">
+                <h2>Learning Hours</h2>
+                <img src="images/class.jpg" alt="image-charity" class="mySlides">
+                <img src="images/ict.jpg" alt="image-charity2" class="mySlides">
+                <img src="images/classS.jpg" alt="image-charity3" class="mySlides">
+                <p>Students Learning(ICT included)</p>
+            </div>
+        </div>
+    </section>
+    
+    
+    <!-- Footer -->
+    <footer>
+        <p>Made with <box-icon name='heart' type='solid' color='red'></box-icon> 2022 Elixir School. All Rights Reserved.</p>
+    </footer>
+
+
+
+    <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
+    <script src="js/menu.js"></script>
+    <script>
+        var slideIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > x.length) {slideIndex = 1}
+            x[slideIndex-1].style.display = "block";
+            setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+    </script>
+</body>
+</html>
